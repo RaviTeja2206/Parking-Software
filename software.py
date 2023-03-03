@@ -3,7 +3,6 @@ import csv
 from operations import software
 
 if os.path.exists("my_file.csv"):
-
   with open("my_file.csv",mode='r') as file:
     reader=csv.reader(file)
     cnt=0
@@ -22,9 +21,7 @@ else:
   # A -> Available
   # O -> Occupied
   park_buliding=[["A" for i in range(per_floor_slots)] for j in range(floors)]
-  
   print(f"floors={floors},per_floor_slots={per_floor_slots}")
-  print()
   print("Configured the parking building")
   software(park_buliding)
   
