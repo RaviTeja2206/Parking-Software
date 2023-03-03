@@ -7,7 +7,6 @@ def software(park_buliding):
     5.Exit
     """)
     def slotsavailable(prnt):
-      print("slotsavailability",prnt)
       cnt,floor=0,0
       for x in park_buliding:
         floor_count=x.count("A")
